@@ -1,0 +1,204 @@
+:root {
+  --fontVeryBig: 3rem;
+  --fontBig: 2.2rem;
+  --fontMedium: 1rem;
+  --fontSmall: 0.85rem;
+
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    --fontVeryBig: 3.5.5rem;
+    --fontBig: 2.5rem;
+    --fontMedium: 1.25rem;
+    --fontSmall: 1rem;
+  }
+
+  @media screen and (min-width: map-get($breakpoints, large)) {
+    --fontVeryBig: 4.5rem;
+    --fontBig: 3rem;
+    --fontMedium: 1.5rem;
+    --fontSmall: 1rem;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+}
+
+.artist-of-week__full-album,
+.register__email-button,
+.landing-page__title {
+  text-align: center;
+}
+
+.dashboard-main__account-name,
+.artist-of-week__songs-item,
+.artist-of-week__description,
+.artist-of-week__full-album,
+.chat__form-input,
+.dashboard-main__top-message,
+.home-form__input,
+.more-news__article {
+  font-size: 0.9em;
+}
+
+.dashboard-main__account-type {
+  font-size: 0.8em;
+  text-align: end;
+}
+
+.trandings__principal-category {
+  text-transform: uppercase;
+}
+
+.trandings__principal-title {
+  font-size: 1.5em;
+}
+
+.earnings__small-card-number,
+.dashboard__small-card-number {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.trandings__principal-category {
+  font-size: 0.7em;
+}
+
+.artist-of-week__section-span,
+.chat__form-input,
+.chat__card-message,
+.chat__principal-user-info,
+.chat__card-state {
+  font-size: 0.8em;
+}
+
+.artist-of-week__album {
+  font-size: 1.7em;
+}
+
+.artist-of-week__section-span,
+.artist-of-week__author {
+  font-weight: bold;
+}
+
+.more-news__article,
+.chat__card-name {
+  font-size: 0.7em;
+}
+
+.landing-page__title {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 10px white;
+}
+
+.landing-page__text {
+  text-transform: capitalize;
+}
+
+.landing-page__span {
+  text-transform: lowercase;
+}
+
+.landing-page__video-wrapper-title {
+  text-transform: uppercase;
+  font-size: 1.9em;
+  text-align: center;
+  margin: auto;
+  text-shadow: 0 0 10px #ff04c9;
+
+  @media screen and (min-width: map-get($breakpoints, large)) {
+    font-size: 3.5em;
+  }
+}
+
+.landing-page__video-wrapper-text {
+  text-align: center;
+}
+
+.landing-page__main-title {
+  text-align: center;
+}
+
+.landing-page__buy-tickets,
+.landing-page__login-item {
+  text-transform: uppercase;
+}
+
+.landing-page__trendings-description {
+  font-weight: 400;
+}
+
+.social-section__signup-artist {
+  font-size: var(--fontSmall);
+}
+
+.social-section__header-title,
+.social-section__second-title,
+.social-section__third-title {
+  font-size: var(--fontBig);
+}
+
+.social-section__second-subtitle {
+  font-size: 1em;
+  text-align: center;
+}
+
+.social-section__item-title {
+  font-weight: bold;
+  font-size: var(--fontMedium);
+  color: #3f82f7;
+}
+
+.social-section__item-description {
+  font-size: var(--fontSmall);
+  text-align: center;
+  margin: 0;
+  max-width: 40ch;
+}
+
+.social-section__third-subtitle {
+  text-align: center;
+}
+
+.footer__input,
+.footer__submit {
+  font-size: 0.9em;
+}
+
+.footer__copyrigth {
+  text-transform: uppercase;
+  font-size: var(--fontMedium);
+}
+
+.events-list__table-head-row,
+.events-table__th {
+  font-weight: bold;
+}
+
+.add-event-title {
+  text-align: center;
+}
+
+.add-event-form__text {
+  user-select: none;
+}
+
+.add-event-form__button {
+  text-decoration: blue;
+}
+
+.landing-page__events-previous,
+.landing-page__events-next {
+  font-size: 2.5em;
+}

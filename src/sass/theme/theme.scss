@@ -1,0 +1,880 @@
+.container {
+  width: 90%;
+
+  margin: auto;
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    width: 80%;
+  }
+}
+
+.button {
+  background: linear-gradient(45deg, #03a9f4, #9c27b0);
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 10px #9c27b0;
+
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 15px #9c27b0;
+  }
+
+  &:active {
+    transition-duration: 0.15s;
+    transform: scale(0.95);
+    box-shadow: 3px 3px 5px #9c27b0;
+  }
+}
+
+.min-100vh {
+  min-height: 100vh;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+// ------------------ Landing page -------------------
+
+.landing-page__container {
+  background-color: rgb(18, 18, 18);
+}
+
+.landing-page__header {
+  background-color: #0a0d1b;
+  color: white;
+}
+
+.landing-page__search-icon {
+  background-image: url($search-icon);
+}
+
+.landing-page__search-close {
+  background-image: url($search-close-icon);
+}
+
+.landing-page__search-icon,
+.landing-page__search-close {
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.landing-page__login-item {
+  background-color: #3f82f7;
+}
+
+.landing-page__responsive-menu-form {
+  transition: transform 1s;
+}
+
+.landing-page__video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.landing-page__overlay::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(1deg, #00000075, #020202c4 30%, #00000045);
+}
+
+.landing-page__video-wrapper {
+  color: white;
+}
+
+.landing-page__video-wrapper-submit {
+  background-color: #3f82f7;
+  color: white;
+  border: none;
+  border-radius: 0;
+}
+
+.landing-page__main,
+.landing-page__responsive-menu {
+  color: white;
+}
+
+.landing-page__carousel-container {
+  overflow: unset !important;
+}
+
+.landing-page__events-title {
+  font-size: var(--fontBig);
+  margin-bottom: 3rem;
+}
+
+.landing-page__responsive-menu-item {
+  cursor: pointer;
+}
+
+.landing-page__responsive-menu-exit {
+  &::before {
+    background-image: url($cross-icon);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.landing-page__menu-list {
+}
+
+.landing-page__input-field {
+  outline: none;
+}
+
+.social-section__item-image {
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.landing-page__menu-item {
+  cursor: pointer;
+}
+
+.landing-page__menu-icon {
+  background-image: url($menu-icon);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.labels--item::after,
+.performers--item::after {
+  background-image: url($caret-down);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landing-page__login-item {
+  &:before {
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &:after {
+    background-image: url($login-icon);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.landing-page__menu-link {
+  color: inherit;
+}
+
+.landing-page__menu-link-login {
+  color: inherit;
+  background-color: $blue-buttons;
+}
+
+.landing-page__menu-link-container::before {
+  background-color: #0a0d1b;
+}
+
+.landing-page__label-menu {
+  &::after {
+    background-image: url($arrow-down-sign);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.landing-page__event {
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+.landing-page__events-previous,
+.landing-page__events-next {
+  color: white;
+  background-color: hsla(0, 0%, 100%, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.landing-page__events-image {
+  border-radius: 20px;
+}
+
+.landing-page__buy-tickets {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.landing-page__trendings-image {
+  width: 100%;
+}
+
+.landing-page__footer {
+  color: white;
+  position: relative;
+}
+
+.social-section__item-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: drop-shadow(2px 4px 6px #3f82f7);
+}
+
+.music-icon {
+  background-image: url($music-icon);
+}
+
+.calendar-icon {
+  background-image: url($calendar-icon);
+}
+
+.chat-icon {
+  background-image: url($chat-icon);
+}
+
+.build-icon {
+  background-image: url($build-icon);
+}
+
+.social-section__signup-button {
+  background-color: #3f82f7;
+  color: white;
+  border: none;
+}
+
+.social-section__signup-artist {
+  background-color: transparent;
+  color: #3f82f7;
+  text-decoration: underline;
+}
+
+.labels__subsection {
+  background-image: url($labels-image);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-blend-mode: darken;
+  background-color: hsla(0, 100%, 0%, 0.5);
+}
+
+.performers__microphone,
+.performers__djs {
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.performers__microphone {
+  background-image: url($microphone-image);
+}
+
+.performers__djs {
+  background-image: url($dj-image);
+}
+
+.performers__section3 {
+  background-color: white;
+}
+
+.footer__submit,
+.footer__input {
+  border-radius: 10px;
+}
+
+.footer__submit {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: hsl(200, 100%, 50%);
+}
+
+[class*="footer__social-icon"] {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.footer__social-icon--soundcloud {
+  background-image: url($soundcloud-icon);
+  &::after {
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+}
+
+.footer__social-icon--youtube {
+  background-image: url($youtube-icon);
+  &::after {
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+}
+
+.footer__social-icon--beatport {
+  background-image: url($beatport-icon);
+  &::after {
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+}
+
+.footer__social-icon--instagram {
+  background-image: url($instagram-icon);
+  &::after {
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.landing-page__footer-links {
+  display: flex;
+
+  li a {
+    color: white;
+    margin: 0 15px;
+
+    &:hover {
+      color: rgb(185, 32, 185);
+    }
+  }
+}
+
+// ---------------- Register styles ------------------------
+
+.spotify-login__container {
+  background-color: black;
+  color: white;
+}
+
+.login-page,
+.register-page,
+.register__container {
+  background-color: black;
+  color: white;
+}
+
+.register__redirect {
+  color: yellow;
+}
+
+.register__facebook-button,
+.register__gmail-button,
+.register__email-button {
+  color: white;
+  cursor: pointer;
+}
+
+.register__facebook-button,
+.register__gmail-button {
+  border: none;
+}
+
+.register__facebook-button {
+  background-color: #3b5998;
+
+  &:hover {
+    background-color: darken(#3b5998, 0.3);
+  }
+}
+
+.register__gmail-button {
+  background-color: #4285f4;
+
+  &:hover {
+    background-color: darken(#4285f4, 0.3);
+  }
+}
+
+.register__email-button {
+  background-color: transparent;
+  border: 1px solid hsla(0, 100%, 100%, 0.5);
+
+  &:hover {
+    border: 1px solid white;
+  }
+}
+
+.register__separator {
+  &::before,
+  &::after {
+    background-color: white;
+  }
+}
+
+.register__read-more {
+  background-color: transparent;
+  border: none;
+  text-decoration: white;
+  cursor: pointer;
+  transition: color 1s;
+
+  &:hover {
+    color: #aaa;
+  }
+}
+
+// -------------------------- Dashboard styles ----------------------------
+
+.dashboard-menu,
+.dashboard-menu-container {
+  background-color: $blue-menu;
+}
+
+.dashboard-menu__logo {
+  background-image: url($logo-icon);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.dashboard-responsive-panel {
+  background-color: white;
+}
+
+.dashboard-menu-icon {
+  background-image: url($logo-icon);
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+// .home-icon,
+// .dashboard-icon,
+// .earnings-icon,
+// .chat-icon {
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     cursor: pointer;
+// }
+
+// .home-icon {
+//     background-image: url($home-gray-icon);
+// }
+
+// .dashboard-icon {
+//     background-image: url($statistics-gray-icon);
+// }
+
+// .earnings-icon {
+//     background-image: url($file-gray-icon);
+// }
+
+// .chat-icon {
+//     background-image: url($chat-gray-icon);
+// }
+
+// Top bar styles
+
+.dashboard-main__top {
+  background-color: white;
+}
+
+.dashboard-main__top-message-container::after {
+  background-image: url($sound-bars-icon);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.dashboard-main__menu-item {
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.dashboard-main__account {
+  cursor: pointer;
+
+  &::after {
+    background-image: url($arrow-down-sign);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.dashboard-main__account-submenu {
+  background-color: white;
+}
+
+.dashboard-main__account-type {
+  color: #ccc;
+}
+
+.dashboard-main__account-img {
+  border-radius: 50%;
+}
+
+.bell-icon {
+  background-image: url($bell-icon);
+
+  &::after {
+    background-color: #ccc;
+    cursor: default;
+  }
+}
+
+.logout-icon {
+  background-image: url($logout-icon);
+}
+
+// Home
+
+.home,
+.earnings,
+.dashboard,
+.chat {
+  background-color: $gray-dashboard;
+}
+
+.chat__form-input,
+.home__form-input {
+  border-radius: 30px;
+  box-shadow: 0 0 10px 0 #999;
+  border: none;
+  outline: none;
+}
+
+.trandings__principal {
+  color: white;
+}
+
+.artist-of-week__songs-like,
+.artist-of-week__songs-download,
+.artist-of-week__songs-share,
+.artist-of-week__songs-more {
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.artist-of-week__description,
+.artist-of-week__songs-list {
+  color: gray;
+}
+
+.artist-of-week__songs-like {
+  background-image: url($like-icon);
+}
+
+.artist-of-week__songs-download {
+  background-image: url($download-icon);
+}
+
+.artist-of-week__songs-share {
+  background-image: url($share-icon);
+}
+
+.artist-of-week__songs-more {
+  background-image: url($more-icon);
+}
+
+.artist-of-week__full-album {
+  color: #777;
+  cursor: pointer;
+}
+
+.popular-genres__item {
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid transparent;
+    background-color: steelblue;
+    color: white;
+  }
+}
+
+.more-news__article {
+  color: white;
+  cursor: pointer;
+}
+
+.trandings__principal-img,
+.artist-of-week__image,
+.more-news__image {
+  border-radius: 10px;
+}
+
+// --------------------- Dashboard styles -------------------
+
+.dashboard__fans-card,
+.dashboard__countries-card,
+.dashboard__listeners-card,
+.earnings__small-card,
+.earnings__songs-card,
+.earnings__sales-card,
+.dashboard__small-card {
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 #999;
+}
+
+.earnings__small-card::after,
+.dashboard__small-card::after {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// .costumers-icon::after,
+// .listeners-icon::after {
+//     background-image: url($user-icon);
+// }
+
+// .followers-icon::after {
+//     background-image: url($graph-line-up);
+// }
+
+// .unfollows-icon::after {
+//     background-image: url($graph-line-down);
+// }
+
+// .streams-icon::after {
+//     background-image: url($music-icon);
+// }
+
+// .playlist-icon::after {
+//     background-image: url($heart-icon);
+// }
+
+// .total-streams-icon::after {
+//     background-image: url($clock-icon);
+// }
+
+// .balance-icon::after {
+//     background-image: url($dolar-icon);
+// }
+
+// .purchase-icon::after {
+//     background-image: url($graph-line-up);
+// }
+
+// ----------------------- Chat layout -----------------
+
+.chat__principal {
+  background-color: white;
+}
+
+.chat__principal-picture {
+  border-radius: 50%;
+  float: left;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.chat__principal-user::before {
+  background-color: #ccc;
+}
+
+.chat__card {
+  box-shadow: none;
+  border-radius: initial;
+  cursor: pointer;
+
+  &::after {
+    background-color: hsla(219, 100%, 50%, 0.2);
+  }
+
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    border-radius: 10px;
+    box-shadow: 0 0 3px 3px #ddd;
+  }
+}
+
+.chat__card-image {
+  border-radius: 50%;
+}
+
+.chat__principal-user-info,
+.chat__card-state {
+  color: #ccc;
+}
+
+.chat__principal-icons-clip,
+.chat__principal-icons-smile,
+.chat__principal-icons-microphone,
+.chat__principal-icons-telegram {
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.chat__principal-icons-clip {
+  background-image: url($paper-clip-icon);
+}
+
+.chat__principal-icons-smile {
+  background-image: url($laught-icon);
+}
+
+.chat__principal-icons-microphone {
+  background-image: url($microphone-icon);
+}
+
+.chat__principal-icons-telegram {
+  background-image: url($message-icon);
+}
+
+.chat__principal-textarea {
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  background-color: #eee;
+}
+
+// Events styles
+
+.events-container {
+  color: white;
+  background-color: $blue-background;
+}
+
+.events-title {
+  color: blue;
+}
+
+.events-table {
+  background-color: $blue-menu;
+  border-collapse: collapse;
+}
+
+.events-options__select,
+.events-table__thead,
+.events-table__tr:nth-child(2n) {
+  background-color: $blue-rows;
+  color: white;
+}
+
+.events-options__button-add,
+.events-options__button-filter {
+  background-color: $blue-buttons;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+// Event list styles
+
+.events-list-container {
+  color: white;
+  background-color: $blue-menu;
+}
+
+.events-list__table {
+  background-color: $blue-background;
+  border-collapse: collapse;
+}
+
+.events-details {
+  background-color: $blue-rows;
+}
+
+.events-list__table-head,
+.events-list__table-tr:nth-child(2n) {
+  background-color: $blue-rows;
+}
+
+// Add event styles
+
+.add-event-container {
+  background-color: $blue-menu;
+  color: white;
+}
+
+.add-event-title {
+  //
+}
+
+[class*="add-event-form__dropzone"] {
+  border: 1px dashed white;
+}
+
+.add-event-form__button {
+  color: blue;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.add-event-form__select {
+  color: initial;
+}
+
+.add-event-form__video-icon {
+  background-image: url("https://image.flaticon.com/icons/png/512/1096/1096033.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.add-event-form__image-icon {
+  background-image: url("https://image.flaticon.com/icons/png/512/3342/3342137.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+[class*="add-event-form__label"] {
+  //
+}
+
+[class*="add-event-form__input"] {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 0;
+  outline: none;
+  color: white;
+}
+
+.add-event-form__submit {
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+.add-event-form__cancel {
+  background-color: transparent;
+  color: blue;
+  border: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg, #03a9f4, #9c27b0);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(0deg, #3cb9f3, #d251e9);
+}

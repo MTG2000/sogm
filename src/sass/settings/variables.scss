@@ -1,0 +1,79 @@
+$development: true;
+
+:root {
+  --z-normal: 1;
+  --z-panels: 10;
+  --z-menu: 100;
+}
+
+$breakpoints: (
+  small: 576px,
+  medium: 768px,
+  large: 992px,
+  xlarge: 1200px,
+);
+
+$blue-rows: #202540;
+$blue-background: #16192c;
+$blue-buttons: #3f82f7;
+
+$dark-blue: #16192c;
+$blue-menu: #373b53;
+$gray-dashboard: #f8f8fb;
+
+$music-icon: "https://res.cloudinary.com/leonemil/image/upload/v1626371408/Sound%20of%20good%20music/Path_4283_1X_uqrm1l.png";
+$calendar-icon: "https://res.cloudinary.com/leonemil/image/upload/v1626371400/Sound%20of%20good%20music/Path_3680_1X_vhn5o8.png";
+$chat-icon: "https://res.cloudinary.com/leonemil/image/upload/v1626371385/Sound%20of%20good%20music/Path_4443_1X_crzpxx.png";
+$build-icon: "https://res.cloudinary.com/leonemil/image/upload/v1626371379/Sound%20of%20good%20music/Path_4406_1X_l8awlk.png";
+
+$caret-down: "https://res.cloudinary.com/leonemil/image/upload/v1627238241/Sound%20of%20good%20music/caret-down_rqa9nv.svg";
+$search-icon: "https://res.cloudinary.com/leonemil/image/upload/v1625788414/Sound%20of%20good%20music/magnifying-glass_p9jvya.svg";
+$search-close-icon: "https://res.cloudinary.com/leonemil/image/upload/v1625858901/Sound%20of%20good%20music/boton-x_k4x3yl.svg";
+$cross-icon: "https://image.flaticon.com/icons/png/512/75/75519.png";
+$menu-icon: "https://res.cloudinary.com/leonemil/image/upload/v1609016041/Demos/hamburguesa_y3lqff.svg";
+$login-icon: "https://cdn.animaapp.com/projects/60a039fdeccb8cc9ee1dee3f/releases/60a05842bcfb67375b76b8fb/img/union-44-1@1x.png";
+$landing-page-video: "https://visitmontgomery.com/wp-content/uploads/2018/05/Performance-Venue.jpg";
+$landing-page-background: "https://res.cloudinary.com/leonemil/image/upload/v1614028602/Sound%20of%20good%20music/background-landing-page_libzz7.webp";
+$labels-image: "https://res.cloudinary.com/leonemil/image/upload/v1614547432/Sound%20of%20good%20music/03ec43c35d8b4b968f18e28373fa2a7f_linvn5.webp";
+$microphone-image: "https://static.wixstatic.com/media/b2c0a7_f7059fa7994479d7ee2f21fbc0d771e9.png/v1/fill/w_165,h_189,al_c,q_85,usm_0.66_1.00_0.01/b2c0a7_f7059fa7994479d7ee2f21fbc0d771e9.webp";
+$dj-image: "https://static.wixstatic.com/media/b2c0a7_0f122e3da24c2dab250460faf1dd243b.png/v1/fill/w_165,h_189,al_c,q_85,usm_0.66_1.00_0.01/b2c0a7_0f122e3da24c2dab250460faf1dd243b.web";
+
+$soundcloud-icon: "https://cdn.animaapp.com/projects/60a039fdeccb8cc9ee1dee3f/releases/60a43560c8c1d27834ee400f/img/iconfinder-soundcloud-4691279-1@1x.png";
+$youtube-icon: "https://cdn.animaapp.com/projects/60a039fdeccb8cc9ee1dee3f/releases/60a05842bcfb67375b76b8fb/img/iconfinder-youtube-571117-1@1x.png";
+$beatport-icon: "https://cdn.animaapp.com/projects/60a039fdeccb8cc9ee1dee3f/releases/60a43560c8c1d27834ee400f/img/path-202-1@1x.png";
+$instagram-icon: "https://cdn.animaapp.com/projects/60a039fdeccb8cc9ee1dee3f/releases/60a43560c8c1d27834ee400f/img/instagram-1@1x.png";
+
+$logo-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614111357/Sound%20of%20good%20music/logo_wq7afn.png";
+$menu-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614111548/Sound%20of%20good%20music/lista_e2lw7y.svg";
+$home-gray-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614032236/Sound%20of%20good%20music/home_3_a6ccgd.svg";
+$home-green-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614032235/Sound%20of%20good%20music/home_4_nnmeoc.svg";
+$statistics-gray-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028708/Sound%20of%20good%20music/statistics_bffhca.svg";
+$statistics-green-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028706/Sound%20of%20good%20music/statistics_1_xsgl1u.svg";
+$file-gray-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028709/Sound%20of%20good%20music/file_sl2bah.svg";
+$file-green-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028706/Sound%20of%20good%20music/file_1_wuxwpn.svg";
+$chat-gray-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028705/Sound%20of%20good%20music/chat_x3zpnr.svg";
+$chat-green-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028704/Sound%20of%20good%20music/chat_1_m7vij6.svg";
+
+$sound-bars-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028696/Sound%20of%20good%20music/sound-bars_jeiwj5.svg";
+$arrow-down-sign: "https://res.cloudinary.com/leonemil/image/upload/v1614028704/Sound%20of%20good%20music/arrow-down-sign-to-navigate_gjhp1t.svg";
+$bell-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028704/Sound%20of%20good%20music/bell_w47hhf.svg";
+$logout-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028704/Sound%20of%20good%20music/upload_usbvwg.svg";
+$like-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028695/Sound%20of%20good%20music/like_uz7oyp.svg";
+$download-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028695/Sound%20of%20good%20music/download_mvkzep.svg";
+$share-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028692/Sound%20of%20good%20music/share_1_q48bsx.svg";
+$more-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028694/Sound%20of%20good%20music/more_tgl1tm.svg";
+$gear-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028701/Sound%20of%20good%20music/gears_my0uhn.svg";
+$arrow-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028700/Sound%20of%20good%20music/arrow_ia3ftk.svg";
+
+$user-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028699/Sound%20of%20good%20music/user_ccynui.svg";
+// $graph-line-up: 'https://res.cloudinary.com/leonemil/image/upload/v1614028699/Sound%20of%20good%20music/graph-line_ixqinz.svg';
+// $graph-line-down: 'https://res.cloudinary.com/leonemil/image/upload/v1614028698/Sound%20of%20good%20music/graph_hqlmwh.svg';
+// $music-icon: 'https://res.cloudinary.com/leonemil/image/upload/v1614028697/Sound%20of%20good%20music/music_w6fzr3.svg';
+// $heart-icon: 'https://res.cloudinary.com/leonemil/image/upload/v1614028697/Sound%20of%20good%20music/heart_yriqa6.svg';
+// $clock-icon: 'https://res.cloudinary.com/leonemil/image/upload/v1614028697/Sound%20of%20good%20music/clock_jqkqxy.svg';
+// $dolar-icon: 'https://res.cloudinary.com/leonemil/image/upload/v1614028696/Sound%20of%20good%20music/dollar_vjgasj.svg';
+
+$paper-clip-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028692/Sound%20of%20good%20music/paper-clip_fx9ufd.svg";
+$laught-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028692/Sound%20of%20good%20music/laugh_xruf66.svg";
+$microphone-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028692/Sound%20of%20good%20music/microphone_bipq7z.svg";
+$message-icon: "https://res.cloudinary.com/leonemil/image/upload/v1614028692/Sound%20of%20good%20music/telegram_vo8eza.svg";
